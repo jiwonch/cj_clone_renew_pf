@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+    src: url("../font/CJ+ONLYONE+Bold.ttf");
+    font-family: "cjonlyone_bold";
+}
+
+@font-face {
+    src: url("../font/CJ+ONLYONE+Medium.ttf");
+    font-family: "cjonlyone_medium";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "cjonlyone_medium";
+    color: #333;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    overflow: hidden;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+table {
+    box-sizing: border-box;
+}
+
+#wrap {
+    height: 100%;
+    position: relative;
+    width: 800%;
+}
+
+.box {
+    height: 100%;
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    float: left;
+    width: calc(100%/8);
+}
+
+#box1 {
+    position: relative;
+    overflow: hidden;
+}
+
+#box1 video {
+    width: 100%;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 90px;
+    border: 1px solid #fff;
+}
+
+#header_inner {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header_img {
+    width: 60px;
+    height: 52px;
+    border: 1px solid yellow;
+}
+
+#header_img img {
+    width: 100%;
+    height: 100%;
+}
+
+#header_img .black_logo {
+    display: none;
+}
+
+#header_inner ul {
+    width: 840px;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 500;
+}
+
+#header_inner ul li a {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#language {
+    width: 103px;
+    height: 35.5px;
+    border: 1px solid red;
+    padding: 8px 0;
+    text-align: center;
+}
+
+#language span {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    font-weight: bold;
+}
+
+#search_btn {
+    width: 35px;
+    height: 35px;
+    border: 1px solid lemonchiffon;
+}
+
+#box2 {
+    background-color: white;
+}
+
+#liveNewCj {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+
+#liveNewCj h1 {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: color_flow 15s ease-in-out infinite;
+    word-break: all;
+    font-size: 42px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+@keyframes color_flow {
+    0% {
+        background: linear-gradient(to right, purple, red, orange, yellow, green, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    15% {
+        background: linear-gradient(to right, blue, purple, red, orange, yellow, green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    30% {
+        background: linear-gradient(to right, green, blue, purple, red 40%, orange, yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    45% {
+        background: linear-gradient(to right, yellow, green, blue, purple, red, orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    60% {
+        background: linear-gradient(to right, orange, yellow, green, blue, purple, red);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* 75%{
+        background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    } */
+}
+
+#liveNewCj h5 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+    float: left;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#liveNewCj h6 a {
+    float: right;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#liveNewCj h6 a span {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#liveNewCj h6 a:hover span:nth-child(1) {
+    text-decoration: underline;
+}
+
+#live_content {
+    width: 100%;
+    height: 600px;
+    border: 1px solid green;
+    clear: both;
+    margin-top: 80px !important;
+}
+
+#box3 {
+    background-color: lawngreen;
+}
+
+#box4 {
+    background-color: lightcoral;
+}
+
+#box5 {
+    background-color: lightgreen;
+}
+
+#box6 {
+    background-color: lightskyblue;
+}
+
+#box7 {
+    background-color: lightpink;
+}
+
+#box8 {
+    background-color: lime;
+}
